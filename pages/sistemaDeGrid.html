@@ -1,0 +1,46 @@
+<!-- Os containers permitem que toda a página se ajuste a resolução da tela de acordo com o dispositivo usado pelo usuário -->
+
+<!-- Estrutura de largura fixa -->
+<div class="container" style="background-color: green;">
+  <!-- Os elementos devem ser organizados em linhas e colunas -->
+  <div class="row">
+    <!--
+      Os tamanhos vão de 1 a 12, depende do tamanho da tela do dispositivo, onde:
+      classe .col-[dispositivo]-[tamanho]
+      Telefones = xs | largura < 768 px
+      Tablets = sm | largura >= 768 px
+      Laptops = md | largura >= 992 px 
+      Desktops = lg | largura >= 1200 px
+
+      No exemplo abaixo, se a largura for menor que 768 px, automaticamente as divs serão exibidas uma abaixo da outra,
+      perdendo a distribuição feita para dispositivos com largura maior ou igual a 768 px. Dessa forma as informações
+      sempre serão exibidas
+    -->
+    <div class="col-sm-1" style="background-color: yellow;">
+      <p>Coluna largura 1</p>
+    </div>
+    <div class="col-sm-2" style="background-color: red;">
+      <p>Coluna largura 2</p>
+    </div>
+    <div class="col-sm-9" style="background-color: lightblue;">
+      <p>Coluna largura 9</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Estrutura que ocupa toda a largura -->
+ <div class="container-fluid" style="background-color: green;">
+ <div class="row">
+    <div class="col-sm-1" style="background-color: yellow;">
+      <p>Coluna largura 1</p>
+    </div>
+    <div class="col-sm-2" style="background-color: red;">
+      <p>Coluna largura 2</p>
+    </div>
+    <div class="col-sm-9" style="background-color: lightblue;">
+      <p>Coluna largura 9</p>
+    </div>
+  </div>
+ </div>
